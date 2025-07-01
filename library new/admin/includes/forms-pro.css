@@ -1,0 +1,213 @@
+/* Professional Forms Styling */
+
+.form-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.form-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-color);
+    background-color: rgba(248, 250, 252, 0.8);
+}
+
+.form-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.form-body {
+    padding: 20px;
+}
+
+.form-footer {
+    padding: 16px 20px;
+    border-top: 1px solid var(--border-color);
+    background-color: rgba(248, 250, 252, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Form grid layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background-color: #ffffff;
+    color: var(--text-color);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #94a3b8;
+}
+
+.form-text {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+/* Form validation */
+.form-control.is-invalid {
+    border-color: var(--danger-color);
+}
+
+.invalid-feedback {
+    color: var(--danger-color);
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Select styling */
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e293b' width='18px' height='18px'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+}
+
+/* Checkbox and radio styling */
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-check-input {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.form-check-label {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* Input groups */
+.input-group {
+    display: flex;
+    position: relative;
+}
+
+.input-group .form-control {
+    flex: 1;
+    border-radius: 0;
+}
+
+.input-group .form-control:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.input-group .form-control:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    background-color: #f1f5f9;
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.input-group-text:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: none;
+}
+
+.input-group-text:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left: none;
+}
+
+/* Form buttons */
+.form-btn {
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-btn i {
+    margin-right: 6px;
+}
+
+.form-btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.form-btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.form-btn-secondary {
+    background-color: #f1f5f9;
+    color: var(--text-color);
+}
+
+.form-btn-secondary:hover {
+    background-color: #e2e8f0;
+}
+
+/* Form sections */
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
